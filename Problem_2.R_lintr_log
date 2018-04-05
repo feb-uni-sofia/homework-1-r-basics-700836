@@ -1,0 +1,268 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:4:5: style: Put spaces around all infix operators.
+xmin<-c(23.0, 20.5, 28.2, 20.3, 22.4, 17.2, 18.2)
+   ~^~~
+Problem_2.R:7:5: style: Put spaces around all infix operators.
+xmax<-c(25.0, 22.8, 31.2, 27.3, 28.4, 20.2, 24.1)
+   ~^~~
+Problem_2.R:12:11: style: Put spaces around all infix operators.
+difference<-xmax-xmin
+         ~^~~
+Problem_2.R:12:17: style: Put spaces around all infix operators.
+difference<-xmax-xmin
+               ~^~
+Problem_2.R:15:1: style: Variable and function names should be all lowercase.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+^~~~~~~~
+Problem_2.R:15:15: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+              ^~~~~
+Problem_2.R:15:22: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                     ^~~~~
+Problem_2.R:15:29: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                            ^~~~~
+Problem_2.R:15:36: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                                   ^~~~~
+Problem_2.R:15:43: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                                          ^~~~~
+Problem_2.R:15:50: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                                                 ^~~~~
+Problem_2.R:15:56: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                                                       ^~~~~
+Problem_2.R:15:56: style: Commas should always have a space after.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')
+                                                       ^
+Problem_2.R:16:2: style: Commented code should be removed.
+## NOTE: always insert a blank before and after <- 
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:18:22: style: Variable and function names should be all lowercase.
+names(difference) <- dayNames
+                     ^~~~~~~~
+Problem_2.R:20:14: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+             ^~~~~
+Problem_2.R:20:21: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                    ^~~~~
+Problem_2.R:20:28: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                           ^~~~~
+Problem_2.R:20:35: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                  ^~~~~
+Problem_2.R:20:42: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                         ^~~~~
+Problem_2.R:20:49: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                ^~~~~
+Problem_2.R:20:55: style: Only use double-quotes.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                      ^~~~~
+Problem_2.R:20:55: style: Commas should always have a space after.
+difference[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                      ^
+Problem_2.R:23:1: style: Variable and function names should be all lowercase.
+avgMin <- mean(xmin)
+^~~~~~
+Problem_2.R:24:1: style: Variable and function names should be all lowercase.
+avgMin
+^~~~~~
+Problem_2.R:26:1: style: Variable and function names should be all lowercase.
+avgMax <- mean(xmax)
+^~~~~~
+Problem_2.R:27:1: style: Variable and function names should be all lowercase.
+avgMax
+^~~~~~
+Problem_2.R:30:8: style: Variable and function names should be all lowercase.
+xmin < avgMin
+       ^~~~~~
+Problem_2.R:31:1: style: Variable and function names should be all lowercase.
+minBelowAvg <- xmin < avgMin
+^~~~~~~~~~~
+Problem_2.R:31:23: style: Variable and function names should be all lowercase.
+minBelowAvg <- xmin < avgMin
+                      ^~~~~~
+Problem_2.R:32:1: style: Variable and function names should be all lowercase.
+minBelowAvg
+^~~~~~~~~~~
+Problem_2.R:33:1: style: Variable and function names should be all lowercase.
+dayNames [minBelowAvg]
+^~~~~~~~
+Problem_2.R:33:11: style: Variable and function names should be all lowercase.
+dayNames [minBelowAvg]
+          ^~~~~~~~~~~
+Problem_2.R:36:8: style: Variable and function names should be all lowercase.
+xmax > avgMax
+       ^~~~~~
+Problem_2.R:37:1: style: Variable and function names should be all lowercase.
+maxAboveAvg <- xmax > avgMax
+^~~~~~~~~~~
+Problem_2.R:37:23: style: Variable and function names should be all lowercase.
+maxAboveAvg <- xmax > avgMax
+                      ^~~~~~
+Problem_2.R:38:1: style: Variable and function names should be all lowercase.
+maxAboveAvg
+^~~~~~~~~~~
+Problem_2.R:39:1: style: Variable and function names should be all lowercase.
+dayNames [maxAboveAvg]
+^~~~~~~~
+Problem_2.R:39:11: style: Variable and function names should be all lowercase.
+dayNames [maxAboveAvg]
+          ^~~~~~~~~~~
+Problem_2.R:42:12: style: Put spaces around all infix operators.
+names(xmin)<-dayNames
+          ~^~~
+Problem_2.R:42:14: style: Variable and function names should be all lowercase.
+names(xmin)<-dayNames
+             ^~~~~~~~
+Problem_2.R:43:8: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+       ^~~~~
+Problem_2.R:43:15: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+              ^~~~~
+Problem_2.R:43:22: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                     ^~~~~
+Problem_2.R:43:29: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                            ^~~~~
+Problem_2.R:43:36: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                   ^~~~~
+Problem_2.R:43:43: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                          ^~~~~
+Problem_2.R:43:49: style: Only use double-quotes.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                ^~~~~
+Problem_2.R:43:49: style: Commas should always have a space after.
+xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                ^
+Problem_2.R:44:12: style: Put spaces around all infix operators.
+names(xmax)<-dayNames
+          ~^~~
+Problem_2.R:44:14: style: Variable and function names should be all lowercase.
+names(xmax)<-dayNames
+             ^~~~~~~~
+Problem_2.R:45:8: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+       ^~~~~
+Problem_2.R:45:15: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+              ^~~~~
+Problem_2.R:45:22: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                     ^~~~~
+Problem_2.R:45:29: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                            ^~~~~
+Problem_2.R:45:36: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                   ^~~~~
+Problem_2.R:45:43: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                          ^~~~~
+Problem_2.R:45:49: style: Only use double-quotes.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                ^~~~~
+Problem_2.R:45:49: style: Commas should always have a space after.
+xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun')]
+                                                ^
+Problem_2.R:49:18: style: Trailing whitespace is superfluous.
+  df.xmin = xmin, 
+                 ^
+Problem_2.R:55:3: style: Variable and function names should be all lowercase.
+  xminFahrenheit <- df.xmin * 9/5 + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:55:32: style: Put spaces around all infix operators.
+  xminFahrenheit <- df.xmin * 9/5 + 32
+                              ~^~
+Problem_2.R:59:1: style: Variable and function names should be all lowercase.
+xminFahrenheit<-xmin * 9/5 + 32
+^~~~~~~~~~~~~~
+Problem_2.R:59:15: style: Put spaces around all infix operators.
+xminFahrenheit<-xmin * 9/5 + 32
+             ~^~~
+Problem_2.R:59:25: style: Put spaces around all infix operators.
+xminFahrenheit<-xmin * 9/5 + 32
+                       ~^~
+Problem_2.R:60:1: style: Variable and function names should be all lowercase.
+xmaxFahrenheit<-xmax * 9/5 + 32
+^~~~~~~~~~~~~~
+Problem_2.R:60:15: style: Put spaces around all infix operators.
+xmaxFahrenheit<-xmax * 9/5 + 32
+             ~^~~
+Problem_2.R:60:25: style: Put spaces around all infix operators.
+xmaxFahrenheit<-xmax * 9/5 + 32
+                       ~^~
+Problem_2.R:61:1: style: Variable and function names should be all lowercase.
+temperaturesFahr <- data.frame(
+^~~~~~~~~~~~~~~~
+Problem_2.R:62:23: style: Variable and function names should be all lowercase.
+  df.xminFahrenheit = xminFahrenheit,
+                      ^~~~~~~~~~~~~~
+Problem_2.R:63:23: style: Variable and function names should be all lowercase.
+  df.xmaxFahrenheit = xmaxFahrenheit
+                      ^~~~~~~~~~~~~~
+Problem_2.R:64:2: style: Trailing whitespace is superfluous.
+)  
+ ^~
+Problem_2.R:65:1: style: Variable and function names should be all lowercase.
+temperaturesFahr
+^~~~~~~~~~~~~~~~
+Problem_2.R:69:1: style: Variable and function names should be all lowercase.
+temeraturesFahr[1:5, ]
+^~~~~~~~~~~~~~~
+Problem_2.R:72:1: style: Variable and function names should be all lowercase.
+tempMonFri1<-data.frame(temperaturesFahr[c(1: 5), ])
+^~~~~~~~~~~
+Problem_2.R:72:12: style: Put spaces around all infix operators.
+tempMonFri1<-data.frame(temperaturesFahr[c(1: 5), ])
+          ~^~~
+Problem_2.R:72:25: style: Variable and function names should be all lowercase.
+tempMonFri1<-data.frame(temperaturesFahr[c(1: 5), ])
+                        ^~~~~~~~~~~~~~~~
+Problem_2.R:73:1: style: Variable and function names should be all lowercase.
+tempMonFri1
+^~~~~~~~~~~
+Problem_2.R:75:1: style: Variable and function names should be all lowercase.
+tempMonFri2<-data.frame(temperaturesFahr[-c(6, 7), ])
+^~~~~~~~~~~
+Problem_2.R:75:12: style: Put spaces around all infix operators.
+tempMonFri2<-data.frame(temperaturesFahr[-c(6, 7), ])
+          ~^~~
+Problem_2.R:75:25: style: Variable and function names should be all lowercase.
+tempMonFri2<-data.frame(temperaturesFahr[-c(6, 7), ])
+                        ^~~~~~~~~~~~~~~~
+Problem_2.R:76:1: style: Variable and function names should be all lowercase.
+tempMonFri2
+^~~~~~~~~~~
+> 
+> 
